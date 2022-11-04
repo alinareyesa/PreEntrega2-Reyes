@@ -40,67 +40,67 @@ header {
   height: 110px;
 }
 
-nav {
+.nav_edited{
   position: absolute;
-  right: 10px;
-  top: 45px;
   display: flex;
-  flex-direction: row;
-  justify-content: end;
-  flex-wrap: wrap;
+  right: 0px;
+  height: 110px;
+}
+
+nav{
+  position: absolute;
 }
 
 nav ul {
   list-style: none;
   position: relative;
-  right: 15px;
-}
-nav li {
-  display: inline-block;
-  width: 120px;
-  position: relative;
   font-size: 20px;
-}
-nav ul li a {
-  text-decoration: none;
   font-weight: bold;
-  color: #f06390;
-  font-family: signika, sans-serif;
-}
-nav ul li a:active {
-  color: #fee3ec;
-  text-decoration: underline;
-}
-
-nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.405);
-  transition: 0.4s;
-  padding: 6px;
-}
-
-nav ul ul {
-  position: absolute;
-  display: none;
-}
-nav ul ul li {
-  display: block;
-}
-nav ul li:hover ul {
-  display: block;
+  color:#ffd6e3;
 }
 
 main {
   grid-area: main;
 }
 
+.carousel{
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+}
+
+.carousel_imagenes{
+  height: 660px;
+  width: 660px;
+  margin-left: 100px;
+}
+
+.carousel_texto{
+  padding-left: 100px;
+  align-items: center;
+  height: 300px;
+  padding-right: 100px;
+  padding-top: 80px;
+}
+
+.carousel_texto h2{
+  color: #f06390;
+  font-weight: bold;
+  font-size: 40px;
+}
+
 .titulos {
   text-align: center;
   position: relative;
-  font-weight: bold;
+  font-weight: bolder;
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-size: 24px;
-  margin-top: 40px;
+  align-items: center;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .seccion_info {
@@ -112,13 +112,18 @@ main {
 
 .info {
   font-family: signika, sans-serif;
-  font-size: 20px;
   color: #f06390;
+  font-size: 24px;
   position: relative;
   top: 40px;
   margin: 20px;
   width: 500px;
 }
+
+.info h2, h3{
+  font-weight: bolder;
+}
+
 
 .info a {
   text-decoration: none;
@@ -153,6 +158,11 @@ a:hover {
   height: 220px;
   margin: 10px;
   width: 220px;
+}
+
+.imagenes h2{
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .imagenes p {
@@ -219,7 +229,7 @@ footer {
   background-color: #f9c5d5;
   position: absolute;
   bottom: 0;
-  padding: 10px;
+  padding-top: 20px;
   width: 100%;
   font-family: signika, sans-serif;
   text-align: center;
@@ -242,34 +252,33 @@ footer div {
       "header"
       "main"
       "footer";
-    grid-template-rows: 200px 5fr 1fr;
+    grid-template-rows: 100px 5fr 1fr;
   }
 
-  header {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  nav {
-    position: absolute;
-    top: 140px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  nav ul {
-    position: static;
-  }
-  nav li {
+  header{
+    width: auto;
     display: inline;
     position: relative;
-    font-size: 20px;
-    margin: 10px;
   }
+
+  .logo{
+    position: relative;
+    width: auto;
+  }
+
+  .logo img{
+    width: 280px;
+  }
+
+  .nav_edited{
+    top: 0px;
+    width: 80px;
+  }
+
+  .carousel{
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 1024px) {
