@@ -1,0 +1,47 @@
+.productos {
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+  .imagenes {
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 40px 60px;
+
+    h2{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    img{
+        height: 220px;
+        margin: 10px;
+        width: 220px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    a {
+        background-color: $tercero;
+        text-decoration: none;
+        color: $primero;
+        font-weight: bold;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+        font-size: 20px;
+
+        &:hover {
+            transform: scale(1.4, 1.4);
+            transition: 0.4s;
+          }
+      }
+  }

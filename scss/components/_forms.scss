@@ -1,0 +1,27 @@
+.formulario {
+    width: 500px;
+    padding: 20px;
+    background-color: $cuarto;
+    font-weight: bold;
+    border-color: $primero;
+    border-radius: 6px;
+}
+
+.campos {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid $primero;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: signika, sans-serif;
+}
+
+.boton {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: $primero;
+    color: white;
+    font-size: 15px;
+  }

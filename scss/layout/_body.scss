@@ -1,0 +1,22 @@
+body {
+    background-color: $quinto;
+    color: $primero;
+    font-family: signika, sans-serif;
+    position: relative;
+    padding-bottom: 300px;
+}
+
+.grilla {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-rows: 200px 20fr 1fr;
+}
+
+main {
+    grid-area: main;
+  }
+
+  

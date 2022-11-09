@@ -1,0 +1,54 @@
+@media screen and (max-width: 720px) {
+    .grilla {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "main"
+        "footer";
+      grid-template-rows: 100px 5fr 1fr;
+    }
+  
+    header{
+      width: auto;
+      display: inline;
+      position: relative;
+    }
+  
+    .logo{
+      position: relative;
+      width: auto;
+
+      img{
+        width: 280px;
+      }
+    }
+  
+    .nav_edited{
+      top: 0px;
+      width: 80px;
+    }
+  
+    .carousel{
+      display: none;
+    }
+  }
+  
+@media screen and (max-width: 1024px) {
+    .grilla {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "main"
+        "footer";
+      grid-template-rows: 200px 5fr 1fr;
+    }
+  
+    .logo img {
+      height: 95px;
+    }
+  
+    nav li {
+      display: inline;
+      margin: 6px;
+    }
+  }

@@ -10,16 +10,16 @@ body {
   font-family: signika, sans-serif;
   position: relative;
   padding-bottom: 300px;
-  min-height: 100vh;
 }
 
 .grilla {
   display: grid;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 200px 20fr 1fr;
+}
+
+main {
+  grid-area: main;
 }
 
 header {
@@ -28,65 +28,32 @@ header {
   grid-area: header;
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .logo {
   top: 3px;
 }
-
 .logo img {
   height: 110px;
 }
 
-.nav_edited{
+.nav_edited {
   position: absolute;
   display: flex;
   right: 0px;
   height: 110px;
 }
 
-nav{
+nav {
   position: absolute;
 }
-
 nav ul {
   list-style: none;
   position: relative;
   font-size: 20px;
   font-weight: bold;
-  color:#ffd6e3;
-}
-
-main {
-  grid-area: main;
-}
-
-.carousel{
-  display: flex;
-  flex-direction: row;
-  height: 400px;
-}
-
-.carousel_imagenes{
-  height: 660px;
-  width: 660px;
-  margin-left: 100px;
-}
-
-.carousel_texto{
-  padding-left: 100px;
-  align-items: center;
-  height: 300px;
-  padding-right: 100px;
-  padding-top: 80px;
-}
-
-.carousel_texto h2{
-  color: #f06390;
-  font-weight: bold;
-  font-size: 40px;
 }
 
 .titulos {
@@ -98,7 +65,7 @@ main {
   align-items: center;
 }
 
-h1{
+h1 {
   font-size: 40px;
   font-weight: bold;
 }
@@ -119,20 +86,15 @@ h1{
   margin: 20px;
   width: 500px;
 }
-
-.info h2, h3{
+.info h2, .info h3 {
   font-weight: bolder;
 }
-
-
 .info a {
   text-decoration: none;
   color: #f2789f;
   font-weight: bold;
 }
-
-.info a:active,
-a:hover {
+.info a:active, .info a:hover {
   color: #f9c5d5;
   text-decoration: underline;
 }
@@ -153,22 +115,18 @@ a:hover {
   text-align: center;
   margin: 40px 60px;
 }
-
-.imagenesproductos {
+.imagenes h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.imagenes img {
   height: 220px;
   margin: 10px;
   width: 220px;
 }
-
-.imagenes h2{
-  font-size: 25px;
-  font-weight: bold;
-}
-
 .imagenes p {
-  font-size: 20px;
+  font-size: 22px;
 }
-
 .imagenes a {
   background-color: #f9c5d5;
   text-decoration: none;
@@ -177,11 +135,51 @@ a:hover {
   padding: 10px;
   margin: 10px;
   display: inline-block;
+  font-size: 20px;
 }
-
 .imagenes a:hover {
   transform: scale(1.4, 1.4);
   transition: 0.4s;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+}
+
+.carousel_imagenes {
+  height: 820px;
+  width: 820px;
+  margin-left: 100px;
+}
+
+.carousel_texto {
+  padding-left: 100px;
+  align-items: center;
+  height: 250px;
+  padding-right: 20px;
+  padding-top: 75px;
+}
+.carousel_texto h2 {
+  color: #f06390;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.instagram {
+  width: 60px;
+  position: fixed;
+  bottom: 1px;
+  right: 1px;
+}
+
+.gif {
+  width: 140px;
+  position: fixed;
+  bottom: 1px;
+  left: 1px;
 }
 
 .formulario {
@@ -212,20 +210,6 @@ a:hover {
   font-size: 15px;
 }
 
-.instagram {
-  width: 60px;
-  position: fixed;
-  bottom: 1px;
-  right: 1px;
-}
-
-.gif {
-  width: 140px;
-  position: fixed;
-  bottom: 1px;
-  left: 1px;
-}
-
 footer {
   background-color: #f9c5d5;
   position: absolute;
@@ -240,7 +224,6 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
 }
-
 footer div {
   display: inline-block;
   margin-right: 50px;
@@ -249,55 +232,40 @@ footer div {
 @media screen and (max-width: 720px) {
   .grilla {
     display: grid;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
+    grid-template-areas: "header" "main" "footer";
     grid-template-rows: 100px 5fr 1fr;
   }
-
-  header{
+  header {
     width: auto;
     display: inline;
     position: relative;
   }
-
-  .logo{
+  .logo {
     position: relative;
     width: auto;
   }
-
-  .logo img{
+  .logo img {
     width: 280px;
   }
-
-  .nav_edited{
+  .nav_edited {
     top: 0px;
     width: 80px;
   }
-
-  .carousel{
+  .carousel {
     display: none;
   }
-
 }
-
 @media screen and (max-width: 1024px) {
   .grilla {
     display: grid;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
+    grid-template-areas: "header" "main" "footer";
     grid-template-rows: 200px 5fr 1fr;
   }
-
   .logo img {
     height: 95px;
   }
-
   nav li {
     display: inline;
     margin: 6px;
   }
-}
+}/*# sourceMappingURL=estilos.css.map */

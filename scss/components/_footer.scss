@@ -1,0 +1,19 @@
+footer {
+    background-color: $tercero;
+    position: absolute;
+    bottom: 0;
+    padding-top: 20px;
+    width: 100%;
+    font-family: signika, sans-serif;
+    text-align: center;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    div{
+        display: inline-block;
+        margin-right: 50px;
+    }
+  }
