@@ -1,27 +1,64 @@
+.promo{
+    height: 80px;
+    color: white;
+    background-color: $segundo;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2{
+        font-weight: bolder;
+    }
+}
+
 .carousel{
     display: flex;
     flex-direction: row;
     height: 450px;
+    margin-top: 20px;
   }
   
 .carousel_imagenes{
-    height: 820px;
-    width: 820px;
+    height: 420px;
+    width: 420px;
     margin-left: 100px;
   }
   
 .carousel_texto{
-    padding-left: 100px;
-    align-items: center;
     height: 250px;
+    width: 600px;
+    display: block;
+    padding-left: 80px;
     padding-right: 20px;
-    padding-top: 75px;
+    padding-top: 40px;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    margin-left: 100px;
+    background-image: url(../../assets/imagenes/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-style: dotted;
+    
 
     h2{
         color: $primero;
         font-weight: bold;
         font-size: 40px;
         text-transform: uppercase;
+    }
+
+    p{
+        color: $primero;
+        font-size: 26px;
+        margin-top: 25px;
+        font-weight: bold;
+    }
+
+    img{
+        width: 200px;
+        margin-top: 40px;
     }
   }
 

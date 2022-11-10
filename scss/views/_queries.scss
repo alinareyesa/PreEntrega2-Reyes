@@ -31,8 +31,12 @@
     .carousel{
       display: none;
     }
+
+    .promo{
+        display: none;
+    }
   }
-  
+
 @media screen and (max-width: 1024px) {
     .grilla {
       display: grid;
@@ -40,7 +44,7 @@
         "header"
         "main"
         "footer";
-      grid-template-rows: 200px 5fr 1fr;
+      grid-template-rows: 110px 6fr 110px;
     }
   
     .logo img {

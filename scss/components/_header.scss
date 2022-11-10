@@ -1,11 +1,11 @@
 header {
   background-color: $cuarto;
   height: 110px;
+  position: relative;
   grid-area: header;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  flex-wrap: wrap;
 }
 
 .logo {
