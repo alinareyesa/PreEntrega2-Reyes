@@ -9,14 +9,15 @@
     }
   
     header{
-      width: auto;
+      width: 100%;
       display: inline;
       position: relative;
     }
   
     .logo{
-      position: relative;
+      position: absolute;
       width: auto;
+      margin-left: 80px;
 
       img{
         width: 280px;
@@ -25,7 +26,9 @@
   
     .nav_edited{
       top: 0px;
-      width: 80px;
+      width: 40px;
+      margin-left: 0px;
+      position: relative;
     }
   
     .carousel{
@@ -35,6 +38,11 @@
     .promo{
         display: none;
     }
+
+    .gif{
+      display: none;
+    }
+
   }
 
 @media screen and (max-width: 1024px) {
@@ -46,13 +54,31 @@
         "footer";
       grid-template-rows: 110px 6fr 110px;
     }
-  
-    .logo img {
-      height: 95px;
+
+    body{
+      width: fit-content;
     }
   
-    nav li {
-      display: inline;
-      margin: 6px;
+    .logo{
+      img{
+        height: 95px;
+      }
     }
+
+    .nav_edited{
+      li{
+        height: 40px;
+        z-index: 2;
+      }
+    }
+
+    .promo{
+      display: none;
+  }
+
+
+  footer{
+    display: inline;
+    width: 100%;
+  }
   }
