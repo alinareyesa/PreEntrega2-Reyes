@@ -87,7 +87,7 @@ h1 {
   position: relative;
   top: 40px;
   margin: 20px;
-  width: 500px;
+  max-width: 500px;
 }
 .info h2, .info h3 {
   font-weight: bolder;
@@ -297,6 +297,16 @@ footer div {
   }
   .promo {
     display: none;
+  }
+  .seccion_info {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .formulario {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .gif {
     display: none;
