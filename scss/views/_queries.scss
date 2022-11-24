@@ -8,27 +8,17 @@
       grid-template-rows: 100px 5fr 1fr;
     }
   
-    header{
-      width: 100%;
-      display: inline;
-      position: relative;
-    }
-  
     .logo{
-      position: absolute;
-      width: auto;
-      margin-left: 80px;
-
-      img{
-        width: 280px;
-      }
-    }
-  
-    .nav_edited{
-      top: 0px;
-      width: 40px;
-      margin-left: 0px;
+      width: 200px;
+      height: 80px;
       position: relative;
+      margin-right: 0px;
+    }
+
+    .container-fluid{
+      background-color: $cuarto;
+      z-index: 2;
+      height: auto;
     }
   
     .carousel{
@@ -36,7 +26,11 @@
     }
 
     .promo{
-        display: none;
+      height: fit-content;
+        h2{
+          margin-top: 15px;
+          margin-left: 15px;
+        }
     }
 
     .seccion_info{
@@ -54,7 +48,7 @@
 
   }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 990px) {
     .grilla {
       display: grid;
       grid-template-areas:
@@ -69,9 +63,7 @@
     }
   
     .logo{
-      img{
-        height: 95px;
-      }
+      height: 95px;
     }
 
     .nav_edited{
@@ -81,10 +73,15 @@
       }
     }
 
-    .promo{
-      display: none;
-  }
+    .navbar-nav{
+      left: 0px;
+    }
 
+    .container-fluid{
+      background-color: $cuarto;
+      z-index: 2;
+      height: auto;
+    }
 
   footer{
     display: inline;

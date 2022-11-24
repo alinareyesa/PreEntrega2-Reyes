@@ -1,30 +1,23 @@
-header {
+header{
   background-color: $cuarto;
   height: 110px;
-  position: relative;
   grid-area: header;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  position: relative;
+  top: 0px;
 }
 
 .logo {
-  top: 3px;
-
-  img{
-    height: 110px;
-  }
+  height: 110px;
+  position: relative;
+  right: 0px;
 }
 
-.nav_edited {
-  position: absolute;
-  display: flex;
-  right: 0px;
+.container-fluid{
+  top: 0px;
   height: 110px;
 }
 
 nav {
-  position: absolute;
 
   ul {
     list-style: none;

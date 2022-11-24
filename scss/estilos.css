@@ -27,30 +27,22 @@ main {
 header {
   background-color: #ffd6e3;
   height: 110px;
-  position: relative;
   grid-area: header;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  position: relative;
+  top: 0px;
 }
 
 .logo {
-  top: 3px;
-}
-.logo img {
   height: 110px;
-}
-
-.nav_edited {
-  position: absolute;
-  display: flex;
+  position: relative;
   right: 0px;
+}
+
+.container-fluid {
+  top: 0px;
   height: 110px;
 }
 
-nav {
-  position: absolute;
-}
 nav ul {
   list-style: none;
   position: relative;
@@ -273,30 +265,28 @@ footer div {
     grid-template-areas: "header" "main" "footer";
     grid-template-rows: 100px 5fr 1fr;
   }
-  header {
-    width: 100%;
-    display: inline;
-    position: relative;
-  }
   .logo {
-    position: absolute;
-    width: auto;
-    margin-left: 80px;
-  }
-  .logo img {
-    width: 280px;
-  }
-  .nav_edited {
-    top: 0px;
-    width: 40px;
-    margin-left: 0px;
+    width: 200px;
+    height: 80px;
     position: relative;
+    margin-right: 0px;
+  }
+  .container-fluid {
+    background-color: #ffd6e3;
+    z-index: 2;
+    height: auto;
   }
   .carousel {
     display: none;
   }
   .promo {
-    display: none;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .promo h2 {
+    margin-top: 15px;
+    margin-left: 15px;
   }
   .seccion_info {
     width: -webkit-fit-content;
@@ -312,7 +302,7 @@ footer div {
     display: none;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 990px) {
   .grilla {
     display: grid;
     grid-template-areas: "header" "main" "footer";
@@ -323,15 +313,20 @@ footer div {
     width: -moz-fit-content;
     width: fit-content;
   }
-  .logo img {
+  .logo {
     height: 95px;
   }
   .nav_edited li {
     height: 40px;
     z-index: 2;
   }
-  .promo {
-    display: none;
+  .navbar-nav {
+    left: 0px;
+  }
+  .container-fluid {
+    background-color: #ffd6e3;
+    z-index: 2;
+    height: auto;
   }
   footer {
     display: inline;
