@@ -266,7 +266,7 @@ footer div {
     grid-template-rows: 100px 5fr 1fr;
   }
   .logo {
-    width: 200px;
+    width: 260px;
     height: 80px;
     position: relative;
     margin-right: 0px;
@@ -277,6 +277,19 @@ footer div {
     height: auto;
   }
   .carousel {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin-right: 20px;
+    width: auto;
+    margin-bottom: 10px;
+  }
+  .carousel .carousel_imagenes {
+    margin-left: 40px;
+    height: auto;
+    width: auto;
+  }
+  .carousel .carousel_texto {
     display: none;
   }
   .promo {
@@ -292,6 +305,7 @@ footer div {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    min-width: 360px;
   }
   .formulario {
     width: -webkit-fit-content;

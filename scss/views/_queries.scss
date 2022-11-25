@@ -9,7 +9,7 @@
     }
   
     .logo{
-      width: 200px;
+      width: 260px;
       height: 80px;
       position: relative;
       margin-right: 0px;
@@ -22,7 +22,22 @@
     }
   
     .carousel{
-      display: none;
+      display: flex;
+      flex-wrap: wrap;
+      height: auto;
+      margin-right: 20px;
+      width: auto;
+      margin-bottom: 10px;
+
+      .carousel_imagenes{
+        margin-left: 40px;
+        height: auto;
+        width: auto;
+      }
+      
+      .carousel_texto{
+       display: none;
+      }
     }
 
     .promo{
@@ -35,6 +50,7 @@
 
     .seccion_info{
       width: fit-content;
+      min-width: 360px;
     }
 
     .formulario{
